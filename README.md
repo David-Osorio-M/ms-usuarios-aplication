@@ -2,10 +2,16 @@
 
 Este proyecto es una prueba de conocimientos requerida por el Banco BCI Miami. Implementa una API RESTful para la creación y gestión de usuarios, utilizando Spring Boot. La aplicación permite registrar usuarios nuevos, validar la unicidad del correo electrónico, y generar tokens JWT para la autenticación.
 
+## Diagrama de la solución.
+
+![image](https://github.com/David-Osorio-M/ms-usuarios-aplication/assets/108385654/784769b7-c208-4e8a-b2a5-d23ff7656c13)
+
+
 ## Requisitos
 
 Para ejecutar y probar este proyecto necesitas:
 
+- Sping boot 3
 - Java 17
 - Maven 3.6 o superior
 
@@ -61,16 +67,17 @@ http://localhost:8080/swagger-ui/index.html
 ## Tecnologías Utilizadas
 El proyecto utiliza las siguientes tecnologías:
 
--Spring Boot para el framework de desarrollo.
+- Spring Boot para el framework de desarrollo.
 
--H2 Database como sistema de gestión de base de datos en memoria.
+- H2 Database como sistema de gestión de base de datos en memoria.
 
--JUnit y Mockito para las pruebas unitarias.
+- JUnit y Mockito para las pruebas unitarias.
 
--Swagger/OpenAPI para la documentación de la API.
+- Swagger/OpenAPI para la documentación de la API.
 
 ## Licencia
 Este proyecto es una prueba de conocimientos y no está destinado para uso en producción.
+
 
 
 
