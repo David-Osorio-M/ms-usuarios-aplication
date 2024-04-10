@@ -1,5 +1,5 @@
 package com.bci.onlinebanking.msusuariosaplication.service;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import com.bci.onlinebanking.msusuariosaplication.repository.UsuarioRepository;
 
 import jakarta.transaction.*;
 import java.util.Date;
-import java.util.UUID;
+
 import java.util.regex.Pattern;
 
 
@@ -46,7 +46,7 @@ public class UsuarioServiceImpl implements UsuarioService {
                 .sign(Algorithm.HMAC256(jwtSecret));
     }
 
-    @Autowired
+
     public UsuarioServiceImpl(UsuarioRepository usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
     }

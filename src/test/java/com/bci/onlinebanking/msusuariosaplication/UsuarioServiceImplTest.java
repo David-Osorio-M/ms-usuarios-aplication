@@ -16,7 +16,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import java.util.Date;
 import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
@@ -35,7 +34,7 @@ public class UsuarioServiceImplTest {
         usuarioDto = new UsuarioDto();
         usuarioDto.setNombre("Test User");
         usuarioDto.setCorreo("test@example.com");
-        usuarioDto.setContrasena("Test@1234");
+        usuarioDto.setContrasena("Test@12345");
     
        
         usuarioService = new UsuarioServiceImpl(usuarioRepository); 

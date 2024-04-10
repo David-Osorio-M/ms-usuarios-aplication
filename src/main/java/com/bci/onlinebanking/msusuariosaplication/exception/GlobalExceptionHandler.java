@@ -18,12 +18,6 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(errorDetails, HttpStatus.CONFLICT);
     }
 
-    //     // Manejo específico de UsuarioAlreadyExistsException
-    // @ExceptionHandler(ValidationException.class)
-    // public ResponseEntity<ErrorDetails> ValidationException(UsuarioAlreadyExistsException ex, WebRequest request) {
-    //     ErrorDetails errorDetails = new ErrorDetails(HttpStatus.CONFLICT.value(), ex.getMessage(), request.getDescription(false));
-    //     return new ResponseEntity<>(errorDetails, HttpStatus.CONFLICT);
-    // }
 
     // Manejo genérico de todas las demás excepciones
     @ExceptionHandler(Exception.class)
