@@ -2,7 +2,7 @@
 
 Este proyecto es una prueba de conocimientos requerida por el Banco BCI Miami. Implementa una API RESTful para la creación y gestión de usuarios, utilizando Spring Boot. La aplicación permite registrar usuarios nuevos, validar la unicidad del correo electrónico, y generar tokens JWT para la autenticación.
 
-## Diagrama de la solución.
+## Diagrama de la solución
 
 ![image](https://github.com/David-Osorio-M/ms-usuarios-aplication/assets/108385654/784769b7-c208-4e8a-b2a5-d23ff7656c13)
 
@@ -11,13 +11,14 @@ Este proyecto es una prueba de conocimientos requerida por el Banco BCI Miami. I
 
 Para ejecutar y probar este proyecto necesitas:
 
-- Sping boot 3
+- Spring boot 3
 - Java 17
 - Maven 3.6 o superior
 
 ## Instalación y Ejecución
 
 Para instalar y ejecutar el proyecto, sigue estos pasos:
+
 ```bash
 git clone https://github.com/David-Osorio-M/ms-usuarios-aplication.git
 cd ms-usuarios-aplication
@@ -31,6 +32,7 @@ La aplicación debería estar ahora corriendo y accesible en http://localhost:80
 Pruebas Unitarias 
 
 Para ejecutar las pruebas unitarias del proyecto:
+
 ```bash
 mvn test
 ```
@@ -40,11 +42,12 @@ mvn test
 Para probar la funcionalidad de la API, puedes usar Postman:
 
 Crear Usuario: Envía una solicitud POST a http://localhost:8080/usuarios/crear con el siguiente cuerpo JSON:
+
 ```json
 {
     "nombre": "Juan Rodriguez",
     "correo": "juan@rodriguez.org",
-    "contrasena": "hunter2",
+    "contrasena": "hunter22",
     "telefonos": [
         {
             "number": "1234567",
@@ -60,6 +63,7 @@ Espera recibir un código de estado 201 Created y un cuerpo de respuesta que inc
 ## Documentación de la API con Swagger
 
 Puedes acceder a la documentación interactiva de la API y probar los endpoints directamente desde Swagger UI en:
+
 ```html
 http://localhost:8080/swagger-ui/index.html
 ```
